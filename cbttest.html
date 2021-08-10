@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="cbttest.css">
+</head>
+
+<body style="background-color: darkgrey;">
+    
+    <main class="container" >
+        <section id="infoSect">
+            <div class="d-flex justify-content-around">
+                <h3>CBT Test</h3>
+                <div style="font-size: 20px;">
+                    <span id="Min"></span>
+                    <span>:</span>
+                    <span id="Sec"></span>
+                </div>
+            </div>
+            <h4 id="quesNumber" style="text-align: center;"></h4>
+        </section>
+        <section id="quesSect">
+            <div id="quesDiv" class="p-5" style="display: flex; align-items: center; font-weight: bold;">
+
+            </div>
+        </section>
+        <section id="optionSect">
+            <div id="rad">
+
+            </div>
+        </section>
+        <section id="btnSect" class="d-flex justify-content-around">
+            <button id="prev" class="btn btn-primary" onclick="showQues(this.innerHTML)">Prev</button>
+            <button id="next" class="btn btn-primary" onclick="showQues(this.innerHTML)">Next</button>
+            <div>
+                <button id="startStop" class="btn btn-success" onclick="submit(this.innerHTML)">start</button>
+            </div>
+        </section>
+        <section id="scoreSect">
+            <div id="con" class="container">
+                <div id="score" style="margin-left: auto; margin-right: auto; margin-top: 20px; border-radius: 10px;">
+
+                </div>
+                <div>
+                    <a href="cbttest.html" class="btn btn-success"><b>Retry</b></a>
+                    <button class="btn btn-primary" onclick="checkAnswer()">Check answer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="form_con" class="container"> 
+        <section id="fillQuesSect">
+            <div>
+                <h4>Question</h4>
+            </div>
+            <input type="text" id="addQues">
+        </section>
+        <section id="fillOptionSect">
+            <div>
+                <h4>Option1</h4>
+                <input type="text" id="op1">
+            </div>
+            <div>
+                <h4>Option2</h4>
+                <input type="text" id="op2">
+            </div>
+            <div>
+                <h4>Option3</h4>
+                <input type="text" id="op3">
+            </div>
+            <div>
+                <h4>Option4</h4>
+                <input type="text" id="op4">
+            </div>
+        </section>
+        <section id="fillAnswerSect">
+            <div>
+                <h4>Answer</h4>
+            </div>
+            <input type="text" id="addAns">
+        </section>
+        <section class="text-center mt-3">
+            <button class="btn btn-success" onclick="Push()">Push</button>
+        </section>
+    </div>
+</body>
+<script src="cbt.js"></script>
+</html> 

@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: auto;
+  max-width: 400px !important;
+  height: 80vh;
+  background-color: honeydew;
+  border: 2px solid gray;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+main #infoSect {
+  height: 20%;
+  background-color: #1D3557;
+  color: white;
+  border: 2px solid lightgray;
+}
+main #quesSect {
+  font-size: 23px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  border: 2px solid lightgray;
+  background-color: #457B9D;
+  color: white;
+}
+main #optionSect {
+  font-size: 25px;
+  border: 2px solid lightgray;
+  height: 40%;
+  padding-left: 10%;
+  background-color: powderblue;
+}
+main #scoreSect {
+  position: relative;
+  bottom: 77.5vh;
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap !important;
+  display: none;
+}
+main #score {
+  background-color: red;
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+main #con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  flex-wrap: wrap;
+}
+
+#form_con {
+  max-width: 400px;
+  height: 80vh;
+  background-color: powderblue;
+}
+#form_con h4 {
+  text-align: center;
+}
+#form_con input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #1D3557;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=cbttest.css.map */
